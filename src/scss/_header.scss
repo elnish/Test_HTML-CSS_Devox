@@ -130,16 +130,16 @@
         }
         @include sm {
             @include center;
-            width: 150px;
-            height: 25px;
+            width: 250px;
+            height: 40px;
             font-size: 16px;
-            background-color: rgba(255, 255, 255, .6);
+            background-color: $thirdColor;
             border-bottom: 1px solid $secondColor;
             &:hover {
                 &:after {
                     transform: scaleX(0);
                 }
-                background-color: rgba(255, 255, 255, 1);
+                background-color: $evenItemColor;
             }
         }
     }
