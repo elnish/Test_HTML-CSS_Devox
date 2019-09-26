@@ -1,0 +1,172 @@
+.footer {
+    width: 100%;
+    height: 299px;
+    background: $footerBgColor;
+    color: $thirdColor;
+    padding: 40px 130px 12px;
+    @include flex(column, space-between, flex-start);
+    @include xl {
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+    @include sm {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    @include lg {
+        height: auto;
+    }
+    &__content {
+        width: 100%;
+        @include flex(row, space-between, flex-start);
+        @include lg {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    &__menu-block {
+        margin-right: 40px;
+        @include lg {
+            margin-top: 30px;
+            padding-bottom: 30px;
+            &_first {
+                order: 1;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            &_second {
+                order: 2;
+            }
+            &_third {
+                order: 3;
+            }
+        }
+        @include md {
+         
+        }
+        @include sm {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            margin-right: 0;
+            &_first {
+                align-items: stretch;
+            }
+            &_second {
+                margin-right: 15px;
+            }
+        }
+        
+    }
+    &__title {
+        font-size: 18px;
+        line-height: 1.2em;
+        margin-bottom: 20px;
+        @include lg {
+            font-size: 16px;
+        }
+        @include md {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        @include sm {
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+    }
+    &__text,
+    &__menu-link  {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.2em;
+        @include lg {
+            font-size: 14px;
+        }
+        @include md {
+            font-size: 13px;
+        }
+        @include sm {
+            font-size: 12px;
+        }
+    }
+    &__menu-link {
+        display: inline-block;
+        transition: color .3s ease-in;
+        &_hover {
+            &:hover {
+                color: $secondColor;
+            }
+        }
+    }
+    &__social-list {
+        @include flex(row, flex-start, center);
+        font-size: 22px;
+        @include lg {
+            font-size: 20px;
+        }
+        @include md {
+            font-size: 18px;
+        }
+        @include sm {
+            font-size: 16px;
+            height: 25px;
+        }
+    }
+    &__social-link {
+        margin-right: 15px;
+    }
+    &__social-icon {
+        margin-top: 40px;
+        transition: transform .6s ease-in;
+        &_hover {
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+    &__input {
+        width: 373px;
+        height: 39px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid $thirdColor;
+        background-color: $footerBgColor;
+        margin-top: 20px;
+        @include sm {
+            width: 100%;
+        }
+    }
+    &__input,
+    &__input::placeholder {
+        color: $thirdColor;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.2em;
+        @include lg {
+            font-size: 14px;
+        }
+        @include md {
+            font-size: 13px;
+        }
+        @include sm {
+            font-size: 12px;
+        }
+    }
+    &__copyright {
+        align-self: center;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: $thirdColor;
+        @include lg {
+            font-size: 12px;
+        }
+        @include md {
+            font-size: 11px;
+        }
+        @include sm {
+            font-size: 10px;
+        }
+    }
+}

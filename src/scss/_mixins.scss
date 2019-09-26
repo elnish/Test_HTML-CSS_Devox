@@ -1,0 +1,66 @@
+@mixin flex($flexDirection, $justifyContent, $alignItems) {
+    display: flex;
+    flex-direction: $flexDirection;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin round($width, $height, $bgColor) {
+    width: $width;
+    height: $height;
+    border-radius: 50%;
+    background-color: $bgColor;
+    @include center;
+}
+
+@mixin btnColor($bgColor, $fontColor, $borderColor) {
+    background-color: $bgColor;
+    color: $fontColor;
+    border-color: $borderColor;
+}
+
+@mixin inner {
+    width: 40px;
+    height: 4px;
+    background-color: $secondColor;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}
+
+// Small devices
+@mixin sm {
+    @media (max-width: #{$screen-sm-max}) {
+      @content;
+    }
+  }
+  
+  // Medium devices
+  @mixin md {
+    @media (max-width: #{$screen-md-max}) {
+      @content;
+    }
+  }
+  
+  // Large devices
+  @mixin lg {
+    @media (max-width: #{$screen-lg-max}) {
+      @content;
+    }
+  }
+  
+  // Extra large devices
+  @mixin xl {
+    @media (max-width: #{$screen-xl-max}) {
+      @content;
+    }
+  }
+  

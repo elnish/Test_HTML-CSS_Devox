@@ -1,16 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Duhoot</title>
-    <link rel="shortcut icon" href="" type="image/png">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <script src="https://use.fontawesome.com/6d8b57cb01.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>iOud</title>
+	<link rel="shortcut icon" href="./src/images/fav.png" type="image/png">
+	<link rel="stylesheet" href="./src/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+	<script src="https://use.fontawesome.com/6d8b57cb01.js"></script>
 </head>
 <body>
-  
+	<header class="header">
+		<div class="header__menu">
+			<nav class="header__nav">
+				<button class="header__hamburger hamburger hamburger_emphatic" type="button">
+					<span class="hamburger__box">
+						<span class="hamburger__inner"></span>
+					</span>
+				</button>
+				<ul class="header__nav-list">
+					<li class="header__nav-item">
+						<a href="#" class="header__nav-link">Home</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="#" class="header__nav-link">Store</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="#" class="header__nav-link">Why iOud?</a>
+					</li>
+					
+					<li class="header__nav-item">
+						<a href="#" class="header__logo"><img src="./src/images/logo.svg" alt="logo" class="header__logo-img"></a>
+					</li>
+					<li class="header__nav-item">
+						<a href="#" class="header__nav-link">Our story</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="#" class="header__nav-link">About us</a>
+					</li>
+				</ul>
+			</nav>
+			<a href="#" class="header__logo-link"><img src="./src/images/logo.svg" alt="logo" class="header__logo-mobile"></a>
+			<a href="#" class="header__btn btn btn_medium btn_hover-chromatic">Contact us</a>
+		</div>
+		<div class="header__content">
+			<section class="header__text-box">
+				<h1 class="header__title header__title_h1">Air de musk</h1>
+				<h2 class="header__title header__title_h2">All the new collection</h2>
+				<a href="#" class="header__btn btn btn_large btn_hover-tranparent">Contact us</a>
+			</section>
+			<img src="./src/images/iOud.png" alt="iOud image" class="header__bunner-img">
+			
+		</div>
+	</header>
+	<main class="main">
+		<div class="main__advantages-block">
+			<div class="main__advantages-item main__advantages-item_hover">
+				<div class="main__advantages-icon main__advantages-icon_first"></div>
+				<p class="main__advantages-text">No Charcoal Needed</p>
+			</div>
+			<div class="main__advantages-item main__advantages-item_hover">
+				<div class="main__advantages-icon main__advantages-icon_second"></div>
+				<p class="main__advantages-text">No Burner Required</p>
+			</div>
+			<div class="main__advantages-item main__advantages-item_hover">
+				<div class="main__advantages-icon main__advantages-icon_third"></div>
+				<p class="main__advantages-text">Easy to Light</p>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer__content">
+			<div class="footer__menu-block footer__menu-block_second">
+				<h3 class="footer__title">Legal</h3>
+				<ul class="footer__menu-list">
+					<li class="footer__menu-item">
+						<a href="#" class="footer__menu-link footer__menu-link_hover">Privacy policy</a>
+					</li>
+					<li class="footer__menu-item">
+						<a href="#" class="footer__menu-link footer__menu-link footer__menu-link_hover">Terms and conditions</a>
+					</li>
+					<li class="footer__menu-item">
+						<a href="#" class="footer__menu-link footer__menu-link footer__menu-link_hover">Returns</a>
+					</li>
+					<li class="footer__menu-item">
+						<a href="#" class="footer__menu-link footer__menu-link footer__menu-link_hover">Shipping and Deliveries Policy</a>
+					</li>
+					<li class="footer__menu-item">
+						<a href="#" class="footer__menu-link footer__menu-link footer__menu-link_hover">IOud Stores</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__menu-block footer__menu-block_third">
+				<h3 class="footer__title">iOud</h3>
+				<ul class="footer__menu-list">
+					<li class="footer__menu-item">
+						<a href="#" class="footer__menu-link footer__menu-link footer__menu-link_hover">About us</a>
+					</li>
+					<li class="footer__menu-item">
+						<a href="#" class="footer__menu-link footer__menu-link footer__menu-link_hover">Mission and vision</a>
+					</li>
+					<li class="footer__menu-item">
+						<a href="#" class="footer__menu-link footer__menu-link footer__menu-link_hover">Whi iOud</a>
+					</li>
+				</ul>
+				<ul class="footer__social-list">
+					<li class="footer__social-item">
+						<a href="#" class="footer__social-link" target="_blank">
+							<i class="fa fa-facebook footer__social-icon footer__social-icon_hover" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li class="footer__social-item">
+						<a href="#" class="footer__social-link" target="_blank">
+							<i class="fa fa-instagram footer__social-icon footer__social-icon_hover" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li class="footer__social-item">
+						<a href="#" class="footer__social-link" target="_blank">
+							<i class="fa fa-twitter footer__social-icon footer__social-icon_hover" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__form-block footer__menu-block_first">
+				<h3 class="footer__title">Stay in touch</h3>
+				<p class="footer__text">Receive news about iOud’s latest products and updates</p>
+				<form action="#" method="POST" class="footer__form">
+					<input type="email" name="email" id="email" class="footer__input" placeholder="Email" required> 
+					<input type="submit" value="Send" class="footer__btn btn btn_small btn_hover-white">
+				</form>
+			</div>
+		</div>
+		<p class="footer__copyright">©2019 all rights reserved to Intelligent Oud Co. for Trading</p>
+	</footer>
+	<script src="./src/scripts/hamburger.js"></script>
 </body>
 </html>
 

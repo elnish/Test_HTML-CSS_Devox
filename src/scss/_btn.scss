@@ -1,0 +1,82 @@
+.btn {
+    display: block;
+    height: 50px;
+    @include center;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    border: 2px solid;
+    transition: all .8s ease-in;
+    @include xl {
+        height: 40px;
+        font-size: 18px;
+    }
+    @include lg {
+        font-size: 14px;
+    }
+    @include md {
+        font-size: 12px;
+        height: 30px;
+    }
+    &_small {
+        width: 116px;
+        font-weight: 400;
+        margin-top: 20px;
+        @include btnColor(transparent, $thirdColor, $thirdColor);
+        @include sm {
+            width: 100%;
+            font-size: 16px;
+        }
+    }
+    &_medium {
+        width: 140px;
+        @include btnColor(transparent, $secondColor, $secondColor);
+        @include xl {
+            width: 120px;
+        }
+        @include lg {
+            width: 110px;
+        }
+        @include md {
+            width: 90px;
+        }
+        @include sm {
+            width: 80px;
+        }
+    }
+    &_large {
+        width: 170px;
+        margin-top: 40px;
+        @include btnColor($secondColor, $thirdColor, $secondColor);
+        @include xl {
+            width: 140px;
+        }
+        @include lg {
+            width: 120px;
+        }
+        @include md {
+            width: 100px;
+        }
+        @include sm {
+            width: 110px;
+            margin-top: 20px;
+        }
+    }
+    &_hover-chromatic {
+        &:hover {
+            @include btnColor($secondColor, $thirdColor, $secondColor);
+        }
+    }
+    &_hover-tranparent {
+        &:hover {
+            @include btnColor(transparent, $secondColor, $secondColor);
+        }
+    }
+    &_hover-white {
+        &:hover {
+            @include btnColor($thirdColor, $footerBgColor, $thirdColor);
+            cursor: pointer;
+        }
+    }
+}

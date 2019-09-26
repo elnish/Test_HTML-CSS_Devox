@@ -1,0 +1,217 @@
+@import 'btn';
+@import 'humburger';
+
+.header {
+    width: 100%;
+    height: 942px;
+    position: relative;
+    @include xl {
+        height: 640px;
+    }
+    @include md {
+        height: 480px;
+    }
+    @include sm {
+        height: 320px;
+    }
+    &:after {
+        content: "";
+        background: url(../images/banner-background.png) no-repeat;
+        background-size: cover;
+        opacity: 0.6;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+    &__menu {
+        @include flex(row, space-between, center);
+        height: 105px;
+        position: relative;
+        padding-right: 130px;
+        padding-left: 285px;
+        @include xl {
+            padding-left: 100px;
+            padding-right: 40px;
+        }
+        @include lg {
+            padding-left: 40px;
+            padding-right: 20px;
+        }
+    }
+    &__logo-img {
+        width: 156px;
+        height: 65px;
+        @include xl {
+            width: 125px;
+            height: 52px;
+        }
+        @include lg {
+            width: 78px;
+            height: 33px;
+        }
+        @include md {
+            width: 63px;
+            height: 26px;
+        }
+        @include sm {
+            display: none;
+        }
+    }
+    &__logo-link {
+        display: none;
+            @include sm {
+                display: block;
+            }
+    }
+    &__logo-mobile {
+        position: absolute;
+        width: 78px;
+        height: 33px;
+        top: 30px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    &__logo {
+        margin-right: 60px;
+    }
+    &__nav-list {
+        @include flex(row, space-between, center);
+        @include sm {
+            display: none;
+            &_show {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                z-index: 10;
+            }
+        }
+    }
+    &__nav-link {
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 1.2em;
+        margin-right: 60px;
+        position: relative;
+        &:after {
+            content: '';
+            width: 100%;
+            transform: scaleX(0);
+            height: 1px;
+            background-color: $secondColor;
+            position: absolute;
+            top: 25px;
+            left: 0;
+            transition: transform .5s ease;
+        }
+        &:hover {
+            &:after {
+                transform: scaleX(1);
+            }
+        }
+        @include xl {
+           font-size: 16px;
+        }
+        @include lg {
+            font-size: 14px;
+        }
+        @include md {
+            font-size: 12px;
+        }
+        @include sm {
+            @include center;
+            width: 150px;
+            height: 25px;
+            font-size: 16px;
+            background-color: rgba(255, 255, 255, .6);
+            border-bottom: 1px solid $secondColor;
+            &:hover {
+                &:after {
+                    transform: scaleX(0);
+                }
+                background-color: rgba(255, 255, 255, 1);
+            }
+
+        }
+    }
+    &__content {
+        @include flex(row, space-between, center);
+        padding-left: 225px;
+        padding-right: 125px;
+      
+        @include xl {
+            padding-left: 125px;
+            padding-right: 80px;
+        }
+        @include lg {
+            padding-left: 65px;
+            padding-right: 20px;
+        }
+        @include sm {
+            padding-left: 40px;
+        }
+    }
+    &__title {
+        color: $mainFontColor;
+        &_h1 {
+            font-weight: 900;
+            font-size: 60px;
+            line-height: 1.2em;
+            text-transform: uppercase;
+            @include xl {
+                font-size: 40px;
+            }
+            @include lg {
+                font-size: 28px;
+            }
+            @include md {
+                font-size: 22px;
+            }
+            @include sm {
+                font-size: 16px;
+            }
+        }
+        &_h2 {
+            font-weight: 300;
+            font-size: 40px;
+            line-height: 1.2em;
+            @include xl {
+                font-size: 32px;
+            }
+            @include lg {
+                font-size: 26px;
+            }
+            @include md {
+                font-size: 18px;
+                font-weight: 500;
+            }
+            @include sm {
+                font-size: 12px;
+            }
+        }
+    }
+    &__bunner-img {
+        display: block;
+        width: 586px;
+        height: 686px;
+        @include xl {
+            width: 486px;
+            height: 586px;
+        }
+        @include lg {
+            width: 386px;
+            height: 486px;
+        }
+        @include md {
+            width: 286px;
+            height: 366px;
+        }
+        @include sm {
+            width: 126px;
+            height: 186px;
+        }
+    }
+}
